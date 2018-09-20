@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UserGUI</class>
+ <widget class="QDialog" name="UserGUI">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>487</width>
+    <height>648</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <widget class="QWidget" name="tab_5">
+      <attribute name="title">
+       <string>Call Option</string>
+      </attribute>
+      <widget class="QLabel" name="label_23">
+       <property name="geometry">
+        <rect>
+         <x>11</x>
+         <y>113</y>
+         <width>71</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Volatility</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_27">
+       <property name="geometry">
+        <rect>
+         <x>11</x>
+         <y>247</y>
+         <width>111</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Bond maturity</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtCallPrice">
+       <property name="geometry">
+        <rect>
+         <x>175</x>
+         <y>460</y>
+         <width>113</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_25">
+       <property name="geometry">
+        <rect>
+         <x>12</x>
+         <y>203</y>
+         <width>67</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Interest</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtTerm">
+       <property name="geometry">
+        <rect>
+         <x>169</x>
+         <y>152</y>
+         <width>113</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>0.05</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_22">
+       <property name="geometry">
+        <rect>
+         <x>14</x>
+         <y>345</y>
+         <width>67</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Step</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtBondMatur">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>242</y>
+         <width>113</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>5</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_24">
+       <property name="geometry">
+        <rect>
+         <x>11</x>
+         <y>158</y>
+         <width>111</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Term Structure</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtNumSteps">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>340</y>
+         <width>113</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>100</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtVol">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>108</y>
+         <width>113</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>0.15</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtOption">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>66</y>
+         <width>113</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>4</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="cmdCalculateCall">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>450</y>
+         <width>151</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Calculate Call option</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_21">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>71</y>
+         <width>121</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Option maturity</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_20">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>13</x>
+         <y>25</y>
+         <width>91</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Bond price</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtMaturityPay">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>290</y>
+         <width>113</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>1000</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_26">
+       <property name="geometry">
+        <rect>
+         <x>11</x>
+         <y>295</y>
+         <width>131</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Maturity paymant</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtBondPrice">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>25</y>
+         <width>113</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>950</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtInter">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>199</y>
+         <width>113</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>0.10</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="cmdSaveCall">
+       <property name="geometry">
+        <rect>
+         <x>186</x>
+         <y>551</y>
+         <width>89</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Save</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>Put Option</string>
+      </attribute>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>12</x>
+         <y>78</y>
+         <width>1041</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Exercixe price</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>12</x>
+         <y>116</y>
+         <width>1041</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Interest rate</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>12</x>
+         <y>153</y>
+         <width>1041</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Volatility</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>12</x>
+         <y>40</y>
+         <width>1041</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Bond price</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>14</x>
+         <y>316</y>
+         <width>1041</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Step</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>12</x>
+         <y>192</y>
+         <width>1041</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Time to maturity</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_7">
+       <property name="geometry">
+        <rect>
+         <x>12</x>
+         <y>275</y>
+         <width>1041</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Coupon amount</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>12</x>
+         <y>233</y>
+         <width>1041</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Coupon time</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtExePrice">
+       <property name="geometry">
+        <rect>
+         <x>168</x>
+         <y>70</y>
+         <width>113</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="inputMethodHints">
+        <set>Qt::ImhDialableCharactersOnly</set>
+       </property>
+       <property name="text">
+        <string>100</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtInterest">
+       <property name="geometry">
+        <rect>
+         <x>168</x>
+         <y>107</y>
+         <width>113</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>0.05</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtPrice">
+       <property name="geometry">
+        <rect>
+         <x>168</x>
+         <y>31</y>
+         <width>113</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>100</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtVolatility">
+       <property name="geometry">
+        <rect>
+         <x>168</x>
+         <y>145</y>
+         <width>113</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>0.1</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtTime">
+       <property name="geometry">
+        <rect>
+         <x>168</x>
+         <y>186</y>
+         <width>113</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>1</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtCtime">
+       <property name="geometry">
+        <rect>
+         <x>167</x>
+         <y>228</y>
+         <width>113</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>0.5</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtCAmount">
+       <property name="geometry">
+        <rect>
+         <x>167</x>
+         <y>267</y>
+         <width>113</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>1</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtStep">
+       <property name="geometry">
+        <rect>
+         <x>166</x>
+         <y>307</y>
+         <width>113</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>100</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="cmdCalcCoupon">
+       <property name="geometry">
+        <rect>
+         <x>292</x>
+         <y>452</y>
+         <width>89</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Coupon</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="cmdCalcZero">
+       <property name="geometry">
+        <rect>
+         <x>292</x>
+         <y>414</y>
+         <width>89</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Zero-coupon</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="cmdCalcAmerican">
+       <property name="geometry">
+        <rect>
+         <x>292</x>
+         <y>493</y>
+         <width>89</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>Calculate American zero-coupon</string>
+       </property>
+       <property name="text">
+        <string>American</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="cmdSave">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>565</y>
+         <width>89</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Save</string>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="groupBox">
+       <property name="geometry">
+        <rect>
+         <x>11</x>
+         <y>378</y>
+         <width>261</width>
+         <height>151</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+       <property name="title">
+        <string>Option Price</string>
+       </property>
+       <widget class="QLabel" name="label_9">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>81</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Zero price</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="txtZeroPrice">
+        <property name="geometry">
+         <rect>
+          <x>129</x>
+          <y>36</y>
+          <width>113</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_10">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>80</y>
+          <width>101</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Coupon price</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="txtCouponPrice">
+        <property name="geometry">
+         <rect>
+          <x>129</x>
+          <y>74</y>
+          <width>113</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_11">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>120</y>
+          <width>111</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>American price</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="txtAmericanPrice">
+        <property name="geometry">
+         <rect>
+          <x>129</x>
+          <y>114</y>
+          <width>113</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
