@@ -2,6 +2,6 @@
 
 Program written in OOP C++ which calculates the price of bonds for both option: PUT and CALL.
 
-A graphical user interface has also been implemented with QtCreator
+A graphical user interface has also been implemented with QtCreator.
 
-Project carried out for the UNIVPM Object Oriented Programming course
+Project carried out for the UNIVPM Object Oriented Programming course.
